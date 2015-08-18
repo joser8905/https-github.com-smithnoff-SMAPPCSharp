@@ -16,6 +16,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Introduccion"
+            android:label="@string/title_activity_introduccion" >
+        </activity>
+        <activity
+            android:name=".Sugerencias"
+            android:label="@string/title_activity_sugerencias" >
+        </activity>
+        <activity
+            android:name=".Curso"
+            android:label="@string/title_activity_curso" >
+        </activity>
+        <activity
+            android:name=".Ejercicios"
+            android:label="@string/title_activity_ejercicios" >
+        </activity>
     </application>
 
 </manifest>
