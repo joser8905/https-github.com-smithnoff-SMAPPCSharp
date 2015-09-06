@@ -36,6 +36,14 @@
             android:name=".About"
             android:label="@string/title_activity_about" >
         </activity>
+        <activity
+            android:name=".Examen"
+            android:label="@string/title_activity_examen" >
+        </activity>
+        <activity
+            android:name=".preguntas"
+            android:label="@string/title_activity_preguntas" >
+        </activity>
     </application>
 
 </manifest>

@@ -11,4 +11,7 @@
         e dolores doloribus earum ex incidunt laudantium nemo placeat, quasi quis, saepe, sed soluta temporibus totam unde Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aliquid consectetur earum excepturi fuga, harum illum impedit ipsa iste labore laboriosam neque nesciunt numquam provident recusandae ullam vel, veniam <voluptas class="lori"></voluptas>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci autem blanditiis cumque deserunt ea exercitationem, facilis fugit
         iure laborum omnis, quod sed sequi unde? Cum dicta dolore fuga minus ></string>
     <string name="title_activity_about">About</string>
+    <string name="title_activity_examen">Examen</string>
+    <string name="title_activity_zplash">Zplash</string>
+    <string name="title_activity_preguntas">preguntas</string>
 </resources>

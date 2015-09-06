@@ -4,6 +4,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
+
     tools:context="com.appudo.rsmapp.smappcsharp.Curso">
 
     <ScrollView
@@ -22,14 +23,14 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New Button"
+                android:text="Introduccion C#"
                 android:background="@drawable/reodondo2"
                 android:id="@+id/button2" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New Button"
+                android:text="Declaraciones"
                 android:background="@drawable/reodondo2"
                 android:id="@+id/button3"
                 android:layout_centerVertical="true"
@@ -38,7 +39,7 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New Button"
+                android:text="Definiciones"
                 android:background="@drawable/reodondo2"
                 android:id="@+id/button4"
                 android:layout_below="@+id/button3"
@@ -47,7 +48,7 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New Button"
+                android:text="Leccion 1  If-Else"
                 android:background="@drawable/reodondo2"
                 android:id="@+id/button5"
                 android:layout_below="@+id/button3"
@@ -56,9 +57,25 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="New Button"
+                android:text="Leccion 2 Ciclos"
                 android:background="@drawable/reodondo2"
                 android:id="@+id/button6"
+                android:layout_below="@+id/button3"
+                android:layout_centerHorizontal="true" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Leccion 3 Arreglos"
+                android:background="@drawable/reodondo2"
+                android:id="@+id/button7"
+                android:layout_below="@+id/button3"
+                android:layout_centerHorizontal="true" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Leccion 4 Clases y Objetos"
+                android:background="@drawable/reodondo2"
+                android:id="@+id/button8"
                 android:layout_below="@+id/button3"
                 android:layout_centerHorizontal="true" />
         </LinearLayout>

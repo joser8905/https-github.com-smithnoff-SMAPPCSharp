@@ -1,10 +1,11 @@
 package com.appudo.rsmapp.smappcsharp;
 
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -12,6 +13,8 @@ import android.view.View;
 
 public class MainActivity extends ActionBarActivity {
     private Toolbar toolbar;
+
+    AlertDialog levelDialog;
     ViewPager pager;
     ViewPagerAdapter adapter;
     SlidingTabLayout tabs;
@@ -43,6 +46,7 @@ public class MainActivity extends ActionBarActivity {
 
         // Setting the ViewPager For the SlidingTabsLayout
         tabs.setViewPager(pager);
+
     }
 
     @Override
@@ -71,5 +75,46 @@ public class MainActivity extends ActionBarActivity {
 
         Intent i=new Intent(this,About.class);
         startActivity(i);
+    }
+    public void metodo(View v)
+    {
+        final CharSequence[] items = {" Basico "," Medio "," Avanzado "};
+
+        // Creating and Building the Dialog
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Seleciona un nivel Dificultad");
+        builder.setSingleChoiceItems(items, -1, new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int item) {
+
+                Intent d=new Intent();
+
+                switch (item) {
+                    case 0:
+                                     d.putExtra("nivel","Nivel Basico");
+                        d.setClass(getBaseContext(),preguntas.class);
+                        startActivity(d);
+                        break;
+                    case 1:
+                        d.putExtra("nivel","Nivel Medio");
+                        d.setClass(getBaseContext(),preguntas.class);
+                        startActivity(d);
+
+                        break;
+                    case 2:
+                        d.putExtra("nivel","Nivel Avanzado");
+                        d.setClass(getBaseContext(),preguntas.class);
+                        startActivity(d);
+                        break;
+
+
+                }
+                levelDialog.dismiss();
+            }
+        });
+
+        levelDialog = builder.create();
+        levelDialog.show();
+
+
     }
 }
