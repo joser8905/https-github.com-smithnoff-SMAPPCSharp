@@ -14,4 +14,5 @@
     <string name="title_activity_examen">Examen</string>
     <string name="title_activity_zplash">Zplash</string>
     <string name="title_activity_preguntas">preguntas</string>
+    <string name="title_activity_contenido">contenido</string>
 </resources>

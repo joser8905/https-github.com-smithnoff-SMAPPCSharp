@@ -44,6 +44,10 @@
             android:name=".preguntas"
             android:label="@string/title_activity_preguntas" >
         </activity>
+        <activity
+            android:name=".contenido"
+            android:label="@string/title_activity_contenido" >
+        </activity>
     </application>
 
 </manifest>

@@ -66,5 +66,9 @@ public String px="",ra="",rb="",rc="";
 
             }
         }
+    public void borrar()
+    {db.delete(tabla,null,null);
+
+    }
 
 }

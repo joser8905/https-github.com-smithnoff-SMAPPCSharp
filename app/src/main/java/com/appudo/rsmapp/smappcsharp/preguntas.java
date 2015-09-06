@@ -21,8 +21,10 @@ public class preguntas extends AppCompatActivity {
         rb1=(RadioButton)findViewById(R.id.radioButton);//2131492943
         rb2=(RadioButton)findViewById(R.id.radioButton2);//2131492944
         rb3=(RadioButton)findViewById(R.id.radioButton3);//2131492945
-        manejador.insertar("quien eres","luke yo","soy tu","padre",1,"2131492945");
-        manejador.insertar("en verdad tu eres?","tu eres","mi padre","nooooooooo",1,"2131492944");
+        manejador.borrar();
+        manejador.insertar("¿Que es la programacion orientada a objetos?","es un paradigma de programación que usa los objetos en sus "+
+               " interacciones,para diseñar aplicaciones y programas informáticos.","es la ciencia de reparear objetos mediante codigo ","es una forma de escribir codigo usando objetos como herramienta de escritura",1,"2131492945");
+        manejador.insertar("en verdad tu eres?","tu eres","mi padre","nooooooooo",1,"2131492943");
         manejador.leer();
         tp.setText(manejador.px);
         rb1.setText(manejador.ra);

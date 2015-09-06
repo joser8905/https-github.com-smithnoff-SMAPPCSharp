@@ -76,6 +76,11 @@ public class MainActivity extends ActionBarActivity {
         Intent i=new Intent(this,About.class);
         startActivity(i);
     }
+    public void vercontent(View v)
+    {
+    Intent i=new Intent(this,contenido.class);
+    startActivity(i);
+    }
     public void metodo(View v)
     {
         final CharSequence[] items = {" Basico "," Medio "," Avanzado "};
